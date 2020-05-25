@@ -1,0 +1,170 @@
+/* Meyer's CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	background-color: lightgrey;
+	color: #585858;
+}
+
+h1{
+	font-size: 2em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	padding: 12px;
+	color: #DC5555;
+	text-shadow: 1px 1px 1px #DC5555;
+}
+
+h2{
+	font-size: 1.2em;
+	font-family: 'Montserrat', sans-serif;
+	padding: 12px;
+	text-shadow: 1px 1px 1px grey;
+}
+
+h4{
+	font-size: 1em;
+	padding: 0 12px 12px 12px;
+	font-weight: bold;
+
+}
+
+ul {
+list-style-type: none;
+}
+
+p{
+	text-align: justify;
+	margin: auto;
+
+}
+
+strong{
+	font-weight: bold;
+}
+
+main{
+	align-content: space-around;
+}
+
+i{
+	margin-bottom: 10%;
+	color: lightgray;
+}
+
+a{
+	color: lightgray;
+	text-decoration: none;
+}
+
+img{
+	display: block;
+	width: 7em;
+	height: auto;
+	margin: auto 5%;
+}
+
+section{
+	display: flex;
+	margin: 7% auto;
+}
+
+li{
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+
+}
+
+.movie{
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+	height: auto;
+	margin: 0 5% 5% 5%;
+	justify-content: space-around;
+}
+
+.bouton {
+ display: inline-block;
+ border-radius: 5px;
+ border: 1px solid #DC5555;
+ padding: 6px;
+ margin-top: 20px;
+ background-color: #DC5555;
+ text-decoration: none;
+ color: #ffffff;
+}
+
+.container{
+	width: 40%;
+	margin: 9% auto;
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "profil"
+        "social"
+        "movies";
+}
+
+.grid-area{
+	box-shadow: 1px 1px 4px gray;
+	background-color: #ffffff;
+}
+
+.profil{
+	grid-area: profil;
+	padding: 5%;
+	margin-bottom: 25px;
+}
+
+.picture{
+	border-radius: 50%;
+	border: 4px solid lightgray;
+	width: 20%;
+	margin: auto;
+}
+
+.social{
+	grid-area: social;
+	margin-bottom: 25px;
+	padding: 90px;
+}
+
+.box{
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.movies{
+	grid-area: movies;
+	padding: 1%;
+}
+
